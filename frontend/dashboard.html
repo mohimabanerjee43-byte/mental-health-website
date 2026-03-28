@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+
+<style>
+body { font-family: Arial; background:#f5f7fb; margin:0; }
+.header { background:#667eea; color:white; padding:20px; text-align:center; }
+.container { padding:20px; }
+
+.card {
+  background:white;
+  padding:20px;
+  margin:15px 0;
+  border-radius:15px;
+}
+
+select,button {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+
+.progress-bar {
+  background:#eee;
+  border-radius:20px;
+  overflow:hidden;
+  height:20px;
+}
+
+.progress {
+  width:0%;
+  height:100%;
+  border-radius:20px;
+  transition:1s;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">📊 Mental Health Dashboard</div>
+
+<div class="container">
+  <div class="card" id="questions"></div>
+  <button onclick="submitTest()">Analyze</button>
+
+  <div class="card" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
